@@ -1,0 +1,63 @@
+//Page question pour former le parcours
+
+#div-form {  
+  width: $width * 0.7;
+  height: $height * 0.7;
+  overflow: hidden;
+ // margin-top:$height * 0.08;
+ // margin-left: $width * 0.8;
+
+ 
+}
+#div-container {
+  width: $width * 2.1;
+  display: flex;
+  margin: auto;
+}
+.div-question {
+  width: $width *0.7;
+  display: block;
+  height: 30vh;
+}
+.div-input {
+  width: $width * 0.7;
+}
+// fléche en svg
+#div-arrow{
+  display: block;
+  border: 0;
+  text-transform: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: auto;
+}
+
+//Personnaliser les boutons radios
+input {
+  display: none;
+}
+//affichage du input radio personalisé
+input + label::before {
+  background: #fff;
+  border: 2px solid $green-color;
+  border-radius: 40% 30%;
+  margin-top: -3px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"]:checked + label:before {
+  background: $red-color;
+  border-color: $red-color;
+  box-shadow: inset 0px 0px 0px 2px $white-color;
+}
+
+label {
+  cursor: pointer;
+}
