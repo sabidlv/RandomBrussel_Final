@@ -1,4 +1,4 @@
-//--div:.bars : englobe les bars du menu hamburger
+//--div:".bars" : englobe les bars (3divs) du menu hamburger
 .bars {
   position: absolute;
   top: 30px;
@@ -10,7 +10,7 @@
 }
 // div: .bar qui englobe les 3 bars
 .bar {
-  background-color: $orange-color;
+  background-color: $green-color;
   width: 100%;
   height: 0.5rem;
   margin: auto;
@@ -46,6 +46,7 @@
     transform: translateY(12px);
   }
   100% {
+    background-color: $red-color;
     transform: translateY(12px) rotate(45deg);
   }
 }
@@ -55,6 +56,7 @@
     transform: translateY(12px);
   }
   100% {
+    background-color: $red-color;
     transform: translateY(12px) rotate(-45deg);
   }
 }
@@ -90,7 +92,7 @@ ul {
     width: $width * 0.5; //50vw;
     height: auto;
     text-align: center;
-    margin: 2rem auto;
+    margin: 3rem auto;
   }
 }
 
@@ -100,8 +102,14 @@ li a {
   color: $green-color;
   text-decoration: none;
   position: relative;
+ 
+  padding-bottom: 4rem;
+ // padding: $height * 0.05;
   @include lg {
     font-size: $width * 0.05;
+  }
+  @include xl{
+    font-size: $width * 0.04;
   }
 }
 
@@ -111,13 +119,13 @@ li a:hover{
   &::after{ 
     content: "";
      background-image:url(/assets/images/line.svg);
-     background-size: 100% 30px;
+     background-size: 100%;
      background-repeat: no-repeat;
      display: inline-block;
      width: 100%;
      height: 30px;
      position: absolute;  
-     top: 80px;
+     bottom: 20px;
      left: 0;
      margin: auto;    
   }
