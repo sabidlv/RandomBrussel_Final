@@ -79,8 +79,8 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
       </header>
 
       <main>
-
-      <h1>Contact</h1>
+        <section>
+      <h1 class="h1Show">Contact</h1>
         <p>* required fields</p>
         <form action="#" method="POST">
           <div id="container-form">
@@ -89,9 +89,9 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
                 <option value="mister">Mr.</option>
                 <option value="madam">Mrs.</option>
                 <option value="miss">Miss</option>
-              </select>
+              </select><br>
               <label for="nom">Name*</label>
-              <input type="text" name="nom" required class="border-orange" />
+              <input type="text" name="nom" required class="show"/>
             </div>
             <div class="ipt-container">
               <label for="email">Email*</label>
@@ -99,8 +99,7 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
                 type="email"
                 name="email"
                 id="email"
-                required
-                class="border-orange"
+                required class="show"
               />
               <span id="aideCourriel"></span>
             </div>
@@ -112,13 +111,13 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
                 cols="20"
                 rows="5"
                 required
-                class="border-orange"
               ></textarea>
             </div>
           </div>
-          <input type="submit" name="send" value="Send" id="" class="button" />
+          <button type="submit" id="buttonSend">Send</button>
         </form>
 
+        </section>
       </main>
 
       <footer>
