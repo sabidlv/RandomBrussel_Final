@@ -232,3 +232,12 @@ footer {
 .show {
   display: inline-block;
 }
+#container-form {
+  display: flex;
+  flex-direction: column;
+}
+.ipt-container {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
