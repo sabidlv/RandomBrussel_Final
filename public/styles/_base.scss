@@ -223,7 +223,11 @@ footer {
 
 .h1Show {
   display: block;
-  font-size: 25px;
+  font-size: 4rem;
+  overflow: visible;
+  width: auto;
+  height: auto;
+  color: $red-color;
 }
 .show {
   display: inline-block;

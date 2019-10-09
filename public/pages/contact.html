@@ -1,6 +1,6 @@
 <!-- <?php
-if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
-  $nom= $_POST['nom'];
+if (isset($_POST['lastname'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
+  $lastname= $_POST['lastname'];
   $email = $_POST['email'];
   $message = $_POST['message'];
   $titre = $_POST['titre'];
@@ -18,7 +18,7 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
 			break;
 	}
 ​
-  echo '<p>Thank you $titreShow $nom. We will deal with your inquiry promptly. </p>';
+  echo '<p>Thank you $titreShow $lastname. We will deal with your inquiry promptly. </p>';
 }
 ?> -->
 
@@ -90,8 +90,8 @@ if (isset($_POST['nom'], $_POST['email'], $_POST['message'], $_POST['titre'])) {
                 <option value="madam">Mrs.</option>
                 <option value="miss">Miss</option>
               </select><br>
-              <label for="nom">Name*</label>
-              <input type="text" name="nom" required class="show"/>
+              <label for="lastname">Lastname*</label>
+              <input type="text" name="lastname" required class="show"/>
             </div>
             <div class="ipt-container">
               <label for="email">Email*</label>
